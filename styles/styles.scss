@@ -48,3 +48,9 @@ body {
 .content:hover~.cursor-inner {
     opacity: 0;
 }
+
+@media only screen and (max-width: 700px) {
+    body .cursor {
+        display: 'none'
+    }
+}
