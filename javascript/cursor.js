@@ -8,3 +8,4 @@ document.addEventListener("mousemove", (e) => {
     cursor2.style.left = e.pageX + "px";
 });
 
+    

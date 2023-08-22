@@ -9,29 +9,67 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="../styles/styles.css" />
 
+    <!-- tailwind css -->
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link href="output.css" rel="”stylesheet”" />
+    <!-- tailwind css ends -->
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./src/style.css" />
+    <!-- main css ends -->
     <title>4thWallStudios</title>
   </head>
   <body>
+    <!--partical js for rendering the partical in main section [don't touch
+    that!!] -->
+    <div id="particles-js"></div>
+
     <div class="content">
-      <h1>
-        ansh mourysa ansh ansha Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Distinctio libero accusamus, necessitatibus nulla ex
-        quaerat porro, aut asperiores vero modi explicabo atque vel perferendis
-        aliquid omnis ullam consectetur harum laboriosam.
-      </h1>
+      <!-- main section start -->
+      <main class="flex items-center justify-center w-screen h-screen">
+        <div class="mx-5 text-center">
+          <h3 class="text-2xl uppercase lg:text-3xl">
+            ONE PAGE <span class="font-bold text-red-600">PARALLAX</span> ANSH
+            TEMPLATE
+          </h3>
+          <!-- //typing text animation -->
+          <div class="w-full my-4">
+            <div class="inline typing-text">We are</div>
+            <div class="inline text lg:ml-4"></div>
+          </div>
+
+          <p class="text-sm">
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown book.
+          </p>
+
+          <div class="my-5">
+            <button class="btn">Contact Us</button>
+            <button class="btn">View Work</button>
+          </div>
+        </div>
+      </main>
+      <!-- main section ends -->
     </div>
     <!--Cursor Part-->
     <div class="cursor-outer"></div>
     <div class="cursor-inner"></div>
 
     <!-- javascript file -->
-    <script src="../javascript/index.js" async></script>
-    <script src="../javascript/cursor.js"></script>
     <script
-      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
-      async
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+      integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+      crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="./javascript/particel.js" async></script>
+    <script src="./javascript/particelApp.js" async></script>
+    <script src="./javascript/index.js" async></script>
+    <script src="./javascript/slider.js" async></script>
+    <script src="./javascript/cursor.js" async></script>
   </body>
 </html>

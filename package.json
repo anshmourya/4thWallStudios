@@ -1,0 +1,15 @@
+{
+  "name": "4thwallstudio",
+  "version": "1.0.0",
+  "description": "4thwallstuido website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+   
+  },
+  "author": "ansh mourya",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

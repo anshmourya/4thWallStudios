@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+.btn {
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: #f91942;
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  cursor: none;
+}
+
+/*Cursor Start*/
+[class^=cursor] {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.cursor-outer {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  transition: all 0.08s ease-out;
+}
+
+.cursor-inner {
+  width: 7px;
+  height: 7px;
+  background: #fff;
+}
+
+.content:hover ~ .cursor-outer {
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  mix-blend-mode: difference;
+}
+
+.content:hover ~ .cursor-inner {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .cursor-inner,
+  .cursor-outer {
+    display: none;
+  }
+}
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+main {
+  position: relative;
+  /* Make sure the parent is relatively positioned */
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/images/hero-dummy-1.jpg");
+  filter: brightness(50%);
+  z-index: -2;
+}
+
+.typing-text {
+  color: white;
+  font-size: 30px;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.text {
+  color: white;
+  border-right: 2px solid red;
+  font-size: 30px;
+  font-family: sans-serif;
+  color: rgb(255, 30, 0);
+  font-weight: 700;
+}
+
+@media screen and (width >= 768px) {
+  .typing-text,
+  .text {
+    font-size: 55px;
+  }
+}/*# sourceMappingURL=style.css.map */
