@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
 @import "./buttons";
 
 * {
@@ -7,59 +7,52 @@
     box-sizing: border-box;
 }
 
+
+
 body {
     font-family: 'Poppins',
         sans-serif;
     height: 100vh;
     background: #000;
     color: #fff;
-    cursor: none;
+    overscroll-behavior: none;
+
+
 }
 
 /*Cursor Start*/
-[class^=cursor] {
-    position: fixed;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -50%);
+.cursor {
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
     border-radius: 50%;
-    z-index: 9999;
+    position: absolute;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    animation: cursorAnim .5s infinite alternate;
     pointer-events: none;
 }
 
-.cursor-outer {
-    width: 20px;
-    height: 20px;
-    border: 1px solid #fff;
-    transition: all 0.08s ease-out;
+.cursor::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: .5;
+    top: 5px;
+    left: 5px;
+    animation: cursorAnim2 .5s infinite alternate;
 }
 
-.cursor-inner {
-    width: 7px;
-    height: 7px;
-    background: #fff;
+
+.expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 1px solid red;
 }
 
-.content:hover~.cursor-outer {
-    width: 30px;
-    height: 30px;
-    background: #fff;
-    mix-blend-mode: difference;
-}
-
-.content:hover~.cursor-inner {
-    opacity: 0;
-}
-
-@media only screen and (max-width: 700px) {
-
-
-
-    .cursor-inner,
-    .cursor-outer {
-        display: none
-    }
-}
+//cursor stylin ends here
 
 //particel js styling
 #particles-js {
@@ -118,7 +111,7 @@ main::after {
     border-right: 2px solid red;
     font-size: 30px;
     font-family: sans-serif;
-    color: rgb(255, 30, 0);
+    color: #ff1e00;
     font-weight: 700;
 
 }
@@ -128,5 +121,55 @@ main::after {
     .typing-text,
     .text {
         font-size: 55px;
+    }
+}
+
+//know us section styles starts
+@import "./knowUs";
+//know us section styles ends
+
+
+//project section styles starts
+@import "./project";
+//project section styles ends
+
+//services provided section styles
+@import "./services";
+//services provided section ends 
+
+
+//animation keyframes sextion
+@keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.7);
+    }
+}
+
+@keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(.4);
+    }
+}
+
+@keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(3);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
     }
 }

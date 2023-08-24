@@ -26,11 +26,11 @@
   <body>
     <!--partical js for rendering the partical in main section [don't touch
     that!!] -->
-    <div id="particles-js"></div>
-
-    <div class="content">
+    <!-- =============================================================== -->
+    <div class="content" id="smooth-scroll">
       <!-- main section start -->
-      <main class="flex items-center justify-center w-screen h-screen">
+      <main class="flex items-center justify-center h-screen">
+        <div id="particles-js"></div>
         <div class="mx-5 text-center">
           <h3 class="text-2xl uppercase lg:text-3xl">
             ONE PAGE <span class="font-bold text-red-600">PARALLAX</span> ANSH
@@ -53,11 +53,155 @@
           </div>
         </div>
       </main>
+
       <!-- main section ends -->
+      <!-- =============================================================== -->
+      <!-- know us setction starts -->
+      <section
+        class="container gap-32 px-5 pb-4 m-auto my-40 xl:flex"
+        data-speed="2"
+      >
+        <div class="relative lg:w-1/2 picture">
+          <img
+            src="/assets/images/dummy-about-img-1.jpg"
+            alt="about"
+            class="max-w-full"
+          />
+          <div class="play-circle">
+            <img src="/assets/images/paly-text.svg" alt="" class="play-text" />
+            <div class="icon">
+              <a href="#" class="">
+                <img src="/assets/images/play-button.svg" alt="" class="w-6" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about-text">
+          <span>/who are we</span>
+          <h3>4thwallstudio</h3>
+          <h6>
+            We strive to create incredible experiences for people by creating
+            new opportunities for brands, technology and culture.
+          </h6>
+          <h6>
+            Cepteur sint occaecat cupidatat proident, taken possession of my
+            entire soul, , like these sweet mornings of spring taken possession
+            of my entire soul.
+          </h6>
+        </div>
+      </section>
+      <!-- know us setction ends -->
+
+      <!-- =============================================================== -->
+      <!-- project starts here -->
+      <section class="projects">
+        <div class="project-main">
+          <h6>/projects</h6>
+          <h1>
+            Our
+            <div class="words">
+              <span>work</span>
+              <span>projects</span>
+              <span>showcase</span>
+              <span>artistry</span>
+              <span>masterpieces</span>
+            </div>
+          </h1>
+          <hr />
+          <p>
+            Beauty and mystery are hidden under the sea. Explore with our
+            application to know about Aquatic Animals.
+          </p>
+          <button class="cta">
+            <span>Hire Us</span>
+            <svg viewBox="0 0 13 10" height="10px" width="15px">
+              <path d="M1,5 L11,5"></path>
+              <polyline points="8 1 12 5 8 9"></polyline>
+            </svg>
+          </button>
+          <img
+            src="/assets/images/art-work.png"
+            alt="art work"
+            class="art-work"
+          />
+        </div>
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide--one"></div>
+            <div class="swiper-slide swiper-slide--two"></div>
+
+            <div class="swiper-slide swiper-slide--three"></div>
+
+            <div class="swiper-slide swiper-slide--four"></div>
+
+            <div class="swiper-slide swiper-slide--five"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
     </div>
+    <!-- =============================================================== -->
+    <!-- provides services starts -->
+    <section class="container" id="services">
+      <div id="service-header">
+        <h6>/services</h6>
+        <h3>service we <span>provide</span></h3>
+        <h5>
+          Cepteur sint occaecat cupidatat proident, taken possession of my
+          <br />
+          entire soul, like these sweet mornings of spring.
+        </h5>
+      </div>
+      <div class="services">
+        <!-- --------service one-------- -->
+        <div class="service-one service-item">
+          <div class="service-icon">
+            <img src="/assets/images/service-visual-effect.png" alt="" />
+          </div>
+          <div class="service-heading"><h3>digital products</h3></div>
+          <div class="service-description">
+            <p>
+              Web design encompasses many different skills and disciplines in
+              the production of all web.
+            </p>
+          </div>
+        </div>
+        <!-- ------------service two-------------- -->
+        <div class="service-two service-item">
+          <div class="service-icon">
+            <img src="/assets/images/service-visual-effect.png" alt="" />
+          </div>
+          <div class="service-heading"><h3>digital products</h3></div>
+          <div class="service-description">
+            <p>
+              Web design encompasses many different skills and disciplines in
+              the production of all web.
+            </p>
+          </div>
+        </div>
+        <!-- ------------service three-------------- -->
+        <div class="service-three service-item">
+          <div class="service-icon">
+            <img src="/assets/images/service-visual-effect.png" alt="" />
+          </div>
+          <div class="service-heading"><h3>digital products</h3></div>
+          <div class="service-description">
+            <p>
+              Web design encompasses many different skills and disciplines in
+              the production of all web.
+            </p>
+          </div>
+        </div>
+        <!-- ------------service ends-------------- -->
+      </div>
+    </section>
+    <!-- provides services  ends-->
+
+    <!-- =============================================================== -->
     <!--Cursor Part-->
-    <div class="cursor-outer"></div>
-    <div class="cursor-inner"></div>
+    <!-- =============================================================== -->
+    <div class="cursor"></div>
 
     <!-- javascript file -->
     <script

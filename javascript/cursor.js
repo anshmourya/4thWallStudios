@@ -1,11 +1,13 @@
-const cursor = document.querySelector(".cursor-inner");
-const cursor2 = document.querySelector(".cursor-outer");
-document.addEventListener("mousemove", (e) => {
-    cursor.style.top = e.pageY + "px";
-    cursor.style.left = e.pageX + "px";
+const cursor = document.querySelector('.cursor');
 
-    cursor2.style.top = e.pageY + "px";
-    cursor2.style.left = e.pageX + "px";
-});
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+})
 
-    
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
