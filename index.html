@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- stylesheet -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -59,7 +61,10 @@
       <!-- know us setction starts -->
       <section
         class="container gap-32 px-5 pb-4 m-auto my-40 xl:flex"
-        data-speed="2"
+        data-aos="zoom-in"
+        data-aos-anchor-placement="top-center"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
       >
         <div class="relative lg:w-1/2 picture">
           <img
@@ -94,7 +99,13 @@
 
       <!-- =============================================================== -->
       <!-- project starts here -->
-      <section class="projects">
+      <section
+        class="projects"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
+      >
         <div class="project-main">
           <h6>/projects</h6>
           <h1>
@@ -138,7 +149,14 @@
     </div>
     <!-- =============================================================== -->
     <!-- provides services starts -->
-    <section class="container relative" id="services">
+    <section
+      class="container relative"
+      id="services"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-anchor-placement="top-center"
+      data-aos-duration="1500"
+    >
       <div id="service-header">
         <h6>/services</h6>
         <h3>service we <span>provide</span></h3>
@@ -195,23 +213,30 @@
         src="/assets/images/art-work.png"
         alt="art work"
         class="art-work-1"
+        data-aos="zoom-in-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
       />
       <img
         src="/assets/images/art-work.png"
         alt="art work"
         class="art-work-2"
+        data-aos="zoom-in-right"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000"
       />
     </section>
     <!-- provides services  ends-->
 
     <!-- =============================================================== -->
     <!-- contact us section starts -->
-    
+
     <!--Cursor Part-->
     <!-- =============================================================== -->
     <div class="cursor"></div>
 
     <!-- javascript file -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
       integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="

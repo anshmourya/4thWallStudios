@@ -1,3 +1,5 @@
+//aos initalization
+AOS.init();
 //typing text animation
 const typing = new Typed(".text", {
     strings: ["", "Youtuber", "Freelancer", "Web Designer", "Web Developer"],
