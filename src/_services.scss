@@ -78,6 +78,23 @@
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+.art-work-1,
+.art-work-2 {
+    visibility: hidden;
+    position: absolute;
+    top: 56px;
+    right: 0;
+    width: 105px;
+    z-index: -1;
+    filter: brightness(50%);
+    animation: Jumpin 3s infinite linear;
+
+}
+
+.art-work-2 {
+    left: 0;
+}
+
 @media screen and (width>=1024px) {
     #service-header {
         h3 {
@@ -103,5 +120,10 @@
 
     .service-item {
         padding: 50px 45px;
+    }
+
+    .art-work-1,
+    .art-work-2 {
+        visibility: visible;
     }
 }
