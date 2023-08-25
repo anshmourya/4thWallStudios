@@ -22,6 +22,7 @@ body {
 
 /*Cursor Start*/
 .cursor {
+    visibility: hidden;
     width: 30px;
     height: 30px;
     border: 1px solid white;
@@ -117,6 +118,9 @@ main::after {
 }
 
 @media screen and (width >=768px) {
+    .cursor {
+        visibility: visible;
+    }
 
     .typing-text,
     .text {
