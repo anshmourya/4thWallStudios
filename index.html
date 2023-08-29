@@ -29,7 +29,15 @@
     <!--partical js for rendering the partical in main section [don't touch
     that!!] -->
     <!-- =============================================================== -->
-    <div class="content" id="smooth-scroll">
+
+    <!-- //only loads before the pae gets loaded -->
+    <div id="preLoader">
+      <video muted autoplay loop>
+        <source src="./assets/logo/logo-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <!-- //only loads before the pae gets loaded -->
+    <div class="content" id="smooth-scroll ">
       <!-- main section start -->
       <main class="flex items-center justify-center h-screen">
         <div id="particles-js"></div>
@@ -146,87 +154,89 @@
           <div class="swiper-pagination"></div>
         </div>
       </section>
+
+      <!-- provides services starts -->
+      <section
+        class="container relative"
+        id="services"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="1500"
+      >
+        <div id="service-header">
+          <h6>/services</h6>
+          <h3>service we <span>provide</span></h3>
+          <h5>
+            Cepteur sint occaecat cupidatat proident, taken possession of my
+            <br />
+            entire soul, like these sweet mornings of spring.
+          </h5>
+        </div>
+        <div class="services">
+          <!-- --------service one-------- -->
+          <div class="service-one service-item">
+            <div class="service-icon">
+              <img src="/assets/images/service-visual-effect.png" alt="" />
+            </div>
+            <div class="service-heading"><h3>digital products</h3></div>
+            <div class="service-description">
+              <p>
+                Web design encompasses many different skills and disciplines in
+                the production of all web.
+              </p>
+            </div>
+          </div>
+          <!-- ------------service two-------------- -->
+          <div class="service-two service-item">
+            <div class="service-icon">
+              <img src="/assets/images/service-visual-effect.png" alt="" />
+            </div>
+            <div class="service-heading"><h3>digital products</h3></div>
+            <div class="service-description">
+              <p>
+                Web design encompasses many different skills and disciplines in
+                the production of all web.
+              </p>
+            </div>
+          </div>
+          <!-- ------------service three-------------- -->
+          <div class="service-three service-item">
+            <div class="service-icon">
+              <img src="/assets/images/service-visual-effect.png" alt="" />
+            </div>
+            <div class="service-heading"><h3>digital products</h3></div>
+            <div class="service-description">
+              <p>
+                Web design encompasses many different skills and disciplines in
+                the production of all web.
+              </p>
+            </div>
+          </div>
+          <!-- ------------service ends-------------- -->
+        </div>
+        <!-- ART WORK -->
+        <img
+          src="/assets/images/art-work.png"
+          alt="art work"
+          class="art-work-1"
+          data-aos="zoom-in-left"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        />
+        <img
+          src="/assets/images/art-work.png"
+          alt="art work"
+          class="art-work-2"
+          data-aos="zoom-in-right"
+          data-aos-easing="ease-out-cubic"
+          data-aos-duration="2000"
+        />
+      </section>
+      <!-- provides services  ends-->
     </div>
+
     <!-- =============================================================== -->
-    <!-- provides services starts -->
-    <section
-      class="container relative"
-      id="services"
-      data-aos="fade-up"
-      data-aos-easing="linear"
-      data-aos-anchor-placement="top-center"
-      data-aos-duration="1500"
-    >
-      <div id="service-header">
-        <h6>/services</h6>
-        <h3>service we <span>provide</span></h3>
-        <h5>
-          Cepteur sint occaecat cupidatat proident, taken possession of my
-          <br />
-          entire soul, like these sweet mornings of spring.
-        </h5>
-      </div>
-      <div class="services">
-        <!-- --------service one-------- -->
-        <div class="service-one service-item">
-          <div class="service-icon">
-            <img src="/assets/images/service-visual-effect.png" alt="" />
-          </div>
-          <div class="service-heading"><h3>digital products</h3></div>
-          <div class="service-description">
-            <p>
-              Web design encompasses many different skills and disciplines in
-              the production of all web.
-            </p>
-          </div>
-        </div>
-        <!-- ------------service two-------------- -->
-        <div class="service-two service-item">
-          <div class="service-icon">
-            <img src="/assets/images/service-visual-effect.png" alt="" />
-          </div>
-          <div class="service-heading"><h3>digital products</h3></div>
-          <div class="service-description">
-            <p>
-              Web design encompasses many different skills and disciplines in
-              the production of all web.
-            </p>
-          </div>
-        </div>
-        <!-- ------------service three-------------- -->
-        <div class="service-three service-item">
-          <div class="service-icon">
-            <img src="/assets/images/service-visual-effect.png" alt="" />
-          </div>
-          <div class="service-heading"><h3>digital products</h3></div>
-          <div class="service-description">
-            <p>
-              Web design encompasses many different skills and disciplines in
-              the production of all web.
-            </p>
-          </div>
-        </div>
-        <!-- ------------service ends-------------- -->
-      </div>
-      <!-- ART WORK -->
-      <img
-        src="/assets/images/art-work.png"
-        alt="art work"
-        class="art-work-1"
-        data-aos="zoom-in-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      />
-      <img
-        src="/assets/images/art-work.png"
-        alt="art work"
-        class="art-work-2"
-        data-aos="zoom-in-right"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
-      />
-    </section>
-    <!-- provides services  ends-->
 
     <!-- =============================================================== -->
     <!-- contact us section starts -->

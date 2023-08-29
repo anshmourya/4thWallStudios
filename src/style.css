@@ -670,6 +670,17 @@ main::after {
     visibility: visible;
   }
 }
+#preLoader {
+  position: fixed;
+  background-color: #000;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @keyframes cursorAnim {
   from {
     transform: scale(1);
