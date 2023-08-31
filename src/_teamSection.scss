@@ -1,0 +1,167 @@
+#team {
+
+    margin: auto;
+    margin-top: 500px;
+}
+
+.team-title {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 800;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+
+    h1 {
+        display: inline;
+        border-bottom: 6px solid red;
+    }
+}
+
+.team {
+    margin-top: 50px;
+    cursor: grab;
+
+    .swiper-slide {
+        position: relative;
+        width: 16.75rem;
+        height: 28.125rem;
+        transition: all 200ms linear;
+        transform: scale(0.8);
+        overflow: hidden;
+        border-radius: 20px;
+
+
+        &.swiper-slide-active {
+
+            transform: scale(1);
+
+        }
+    }
+
+    .swiper-slide::after {
+        content: "";
+        display: none;
+        position: absolute;
+        left: -50%;
+        top: -50%;
+        height: 200%;
+        width: 200%;
+        background-color: #fff;
+        background-image: url("../assets/images/noise.png");
+        filter: brightness(150%);
+        animation: noise-animation 1s steps(4) infinite;
+        pointer-events: none;
+        transition: 1s ease-in-out;
+    }
+
+    :hover::after {
+        display: block;
+    }
+
+
+
+}
+
+.team-detail {
+    font-family: 'Barlow Condensed', sans-serif;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    visibility: hidden;
+
+
+    p {
+        font-weight: 200;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+
+
+    a {
+        font-size: 31px;
+        color: transparent;
+        -webkit-text-stroke: 1px #000;
+    }
+}
+
+
+
+.team-1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1)),
+        url('../assets/images/work-4.jpg');
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes noise-animation {
+    0% {
+        transform: translate(0, 0)
+    }
+
+    10% {
+        transform: translate(-5%, -5%)
+    }
+
+    20% {
+        transform: translate(-10%, 5%)
+    }
+
+    30% {
+        transform: translate(5%, -10%)
+    }
+
+    40% {
+        transform: translate(-5%, 15%)
+    }
+
+    50% {
+        transform: translate(-10%, 5%)
+    }
+
+    60% {
+        transform: translate(15%, 0)
+    }
+
+    70% {
+        transform: translate(0, 10%)
+    }
+
+    80% {
+        transform: translate(-15%, 0)
+    }
+
+    90% {
+        transform: translate(10%, 5%)
+    }
+
+    100% {
+        transform: translate(5%, 0)
+    }
+}
+
+@media screen and (width >=1024px) {
+    #team {
+        margin-top: 0;
+    }
+}

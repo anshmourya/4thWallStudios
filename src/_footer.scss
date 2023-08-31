@@ -1,0 +1,23 @@
+footer {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    visibility: hidden;
+}
+
+p.copyright {
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom: 0;
+}
+
+@media screen and (width >=768px) {
+    footer {
+        visibility: visible;
+    }
+}

@@ -1,38 +1,47 @@
-var swiper = new Swiper(".swiper", {
+
+var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
-    autoplay: 5000,
     grabCursor: true,
     centeredSlides: true,
+    slidesPerView: "auto",
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
     coverflowEffect: {
-        rotate: 0,
+        rotate: 50,
         stretch: 0,
         depth: 100,
-        modifier: 3,
-        slideShadows: true
-    },
-    keyboard: {
-        enabled: true
-    },
-    mousewheel: {
-        thresholdDelta: 70
+        modifier: 1,
+        slideShadows: true,
     },
     loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true
+
+});
+
+//team members slider
+var swiper = new Swiper(".team", {
+
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 30,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
     breakpoints: {
-        640: {
-            slidesPerView: 2
-        },
-        768: {
+        480: {
             slidesPerView: 1
         },
-        1024: {
+        600: {
             slidesPerView: 2
         },
-        1560: {
+        1000: {
             slidesPerView: 3
         }
     }
+
 });

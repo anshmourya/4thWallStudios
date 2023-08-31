@@ -1,0 +1,81 @@
+.contact {
+    height: 30vh;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.cont-list {
+    h1 {
+        font-family: "Barlow Condensed",
+            sans-serif;
+        font-size: 90px;
+        color: transparent;
+        -webkit-text-stroke: 1px rgb(255, 255, 255);
+        font-weight: 900;
+    }
+}
+
+
+
+.contact-info {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+
+    svg {
+        width: 25px;
+        display: inline-block;
+    }
+
+    >div {
+        width: 100%;
+
+        display: flex;
+
+    }
+}
+
+.cont-list {
+    margin: auto;
+    display: table;
+}
+
+.cont-list .fa-phone-square-alt {
+    font-size: 20px;
+}
+
+.cont-list i {
+    position: absolute;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.cont-list ul li a {
+    padding-left: 28px;
+}
+
+.cont-list ul li {
+    line-height: 40px;
+
+
+}
+
+.cont-list p {
+
+    padding-left: 35px;
+}
+
+#social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 30px auto;
+
+
+    svg {
+        width: 35px;
+        cursor: pointer;
+    }
+
+}

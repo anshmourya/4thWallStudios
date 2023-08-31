@@ -1,0 +1,93 @@
+.hero {
+    height: 100vh;
+}
+
+.hero-img {
+    width: 100%;
+    height: 70%;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+        filter: brightness(50%);
+    }
+}
+
+.hero-video {
+    display: none;
+
+    video {
+        width: 30%;
+        margin: -70px auto;
+    }
+}
+
+@media screen and (width >=1024px) {
+    .hero-video {
+        display: block;
+    }
+}
+
+//nav styling
+.fixed-nav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    animation: nav .3s linear;
+    z-index: 10000;
+    background: #000;
+}
+
+nav {
+    display: none;
+    transition: all .6s cubic-bezier(.77, 0, .175, 1);
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+
+
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    li {
+        cursor: pointer;
+        padding: 3px 6px;
+        width: auto;
+        font-weight: 700;
+        border-bottom: 2px solid transparent;
+        transition: .5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+
+    img {
+        width: 60px;
+    }
+}
+
+nav li:hover {
+    border-bottom: 2px solid red;
+}
+
+@keyframes nav {
+    0% {
+        transform: translateY(-30px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (width >=768px) {
+    nav {
+        display: flex;
+    }
+}

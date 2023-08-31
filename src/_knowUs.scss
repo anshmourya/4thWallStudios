@@ -26,10 +26,31 @@
     position: absolute;
     margin-right: auto;
     margin-top: -12px;
+}
 
-    :hover {
-        animation: vanishIn 1s linear;
-        animation: vanishIn 1s linear;
+.icon::before {
+    position: absolute;
+    content: "";
+    right: -9px;
+    top: -12px;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    transform: translate(-30%, -30%);
+    border: 1px solid white;
+    animation: pulse 2s linear infinite;
+}
+
+
+
+
+@keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 254, 254, 0.875);
+    }
+
+    100% {
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
     }
 }
 
@@ -46,6 +67,7 @@
         font-size: 50px;
         font-weight: 500;
         line-height: 100px;
+  
     }
 
     h6 {
@@ -82,37 +104,6 @@
     }
 }
 
-@keyframes vanishIn {
-    0% {
-        opacity: 0;
-        transform-origin: 50% 50%;
-        transform: scale(2, 2);
-        filter: blur(90px);
-    }
-
-    100% {
-        opacity: 1;
-        transform-origin: 50% 50%;
-        transform: scale(1, 1);
-        filter: blur(0px);
-    }
-}
-
-@keyframes vanishOut {
-    0% {
-        opacity: 1;
-        transform-origin: 50% 50%;
-        transform: scale(1, 1);
-        filter: blur(0px);
-    }
-
-    100% {
-        opacity: 0;
-        transform-origin: 50% 50%;
-        transform: scale(2, 2);
-        filter: blur(20px);
-    }
-}
 
 @keyframes rotation {
     from {
@@ -121,5 +112,19 @@
 
     to {
         transform: rotate(359deg);
+    }
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
     }
 }
