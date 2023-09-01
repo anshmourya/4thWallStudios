@@ -171,37 +171,6 @@ body {
   width: 40px;
 }
 
-/*Cursor Start*/
-.cursor {
-  visibility: hidden;
-  width: 30px;
-  height: 30px;
-  border: 1px solid white;
-  border-radius: 50%;
-  position: absolute;
-  transition-timing-function: ease-out;
-  animation: cursorAnim 0.5s infinite alternate;
-  pointer-events: none;
-}
-
-.cursor::after {
-  content: "";
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  border: 8px solid gray;
-  border-radius: 50%;
-  opacity: 0.5;
-  top: 5px;
-  left: 5px;
-  animation: cursorAnim2 0.5s infinite alternate;
-}
-
-.expand {
-  animation: cursorAnim3 0.5s forwards;
-  border: 1px solid red;
-}
-
 #particles-js {
   position: absolute;
   top: 0;
@@ -280,11 +249,12 @@ main::after {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
-  filter: brightness(50%);
 }
 
 .hero-video {
   display: none;
+  position: relative;
+  z-index: -1;
 }
 .hero-video video {
   width: 30%;
@@ -296,14 +266,23 @@ main::after {
     display: block;
   }
 }
+.logo {
+  position: absolute;
+  z-index: -1;
+}
+.logo video {
+  width: 243px;
+}
+
 .fixed-nav {
   overflow: hidden;
   position: fixed;
   top: 0;
+  z-index: 2;
   width: 100%;
   animation: nav 0.3s linear;
-  z-index: 10000;
   background: #000;
+  padding: 20px;
 }
 
 nav {
@@ -312,6 +291,9 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+}
+nav .nav-list {
+  flex: 1;
 }
 nav ul {
   display: flex;
@@ -329,6 +311,9 @@ nav li {
 }
 nav img {
   width: 60px;
+}
+nav .active {
+  border-bottom: 2px solid red;
 }
 
 nav li:hover {
@@ -487,10 +472,12 @@ nav li:hover {
     transform: scale(1.1);
   }
 }
-.projects {
-  height: 100vh;
+#projects {
   width: 100%;
-  margin: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .project-main {
@@ -524,24 +511,28 @@ nav li:hover {
 }
 
 .project-main .swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  margin-top: 74px;
 }
 .project-main .swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 350px;
+  position: relative;
+  width: 16.75rem;
+  height: 28.125rem;
+  transition: all 200ms linear;
+  transform: scale(0.8);
+  overflow: hidden;
+  border-radius: 20px;
+}
+.project-main .swiper-slide.swiper-slide-active {
+  transform: scale(1);
 }
 .project-main .swiper-slide img {
-  display: block;
   width: 100%;
-  height: 350px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  background-position: center center;
-  border-radius: 20px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.project-main.swiper-slide-active {
+  transform: scale(1);
 }
 
 @media screen and (width >= 786px) {
@@ -598,7 +589,13 @@ nav li:hover {
   }
 }
 #reels {
+  width: 100%;
+  height: 100vh;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .reel-title {
@@ -736,8 +733,14 @@ nav li:hover {
   }
 }
 #team {
+  height: 100vh;
+  width: 100%;
   margin: auto;
   margin-top: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .team-title {
@@ -965,11 +968,14 @@ p.copyright {
   position: fixed;
   background-color: #000;
   height: 100vh;
-  width: 100%;
+  width: 100;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+#preLoader video {
+  width: 50%;
 }
 
 @keyframes cursorAnim {

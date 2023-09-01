@@ -1,8 +1,12 @@
 // project section styling
-.projects {
-    height: 100vh;
+#projects {
     width: 100%;
-    margin: auto;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
 }
 
 .project-main {
@@ -45,27 +49,45 @@
 .project-main {
 
     .swiper {
-        width: 100%;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin-top: 74px;
     }
 
     .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 300px;
-        height: 350px;
+
+        position: relative;
+        width: 16.75rem;
+        height: 28.125rem;
+        transition: all 200ms linear;
+        transform: scale(0.8);
+        overflow: hidden;
+        border-radius: 20px;
+
+
+        &.swiper-slide-active {
+
+            transform: scale(1);
+
+        }
 
         img {
-            display: block;
             width: 100%;
-            height: 350px;
-            object-fit: cover;
-            background-position: center center;
-            border-radius: 20px;
+            height: 100%;
+            object-fit: contain;
+
         }
+
     }
+
+    &.swiper-slide-active {
+
+        transform: scale(1);
+
+    }
+
 }
+
+
+
 
 
 

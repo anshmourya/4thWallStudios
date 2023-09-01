@@ -38,40 +38,7 @@ body {
     }
 }
 
-/*Cursor Start*/
-.cursor {
-    visibility: hidden;
-    width: 30px;
-    height: 30px;
-    border: 1px solid white;
-    border-radius: 50%;
-    position: absolute;
-    // transition-duration: 200ms;
-    transition-timing-function: ease-out;
-    animation: cursorAnim .5s infinite alternate;
-    pointer-events: none;
-}
 
-.cursor::after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    border: 8px solid gray;
-    border-radius: 50%;
-    opacity: .5;
-    top: 5px;
-    left: 5px;
-    animation: cursorAnim2 .5s infinite alternate;
-}
-
-
-.expand {
-    animation: cursorAnim3 .5s forwards;
-    border: 1px solid red;
-}
-
-//cursor stylin ends here
 
 //particel js styling
 #particles-js {

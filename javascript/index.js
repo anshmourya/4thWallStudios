@@ -9,16 +9,30 @@ const typing = new Typed(".text", {
     loop: true,
 
 });
+//handling nav active animations
+const links = document.querySelectorAll('.nav-link');
 
+if (links.length) {
+    links.forEach((link) => {
+        link.addEventListener('click', (e) => {
+            links.forEach((link) => {
+                link.classList.remove('active');
+            });
+            e.preventDefault();
+            link.classList.add('active');
+        });
+    });
+}
 
 // page has to paly for 3 second even if website get loads
 window.addEventListener("load", () => {
     const loader = document.querySelector("#preLoader");
     setTimeout(() => {
         loader.style.display = "none";
-    }, 5000);
+    }, 4000);
 })
 
+//handeling video paly back speed;
 document.querySelector('video').playbackRate = 0.7;
 
 const nav = document.querySelector("nav");
@@ -73,4 +87,9 @@ window.smoothScroll = function (target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+}
+
+function scrollToElement(id) {
+    const elmnt = document.getElementById(id);
+    elmnt.scrollIntoView({ behavior: 'smooth', block: 'start' });
 }

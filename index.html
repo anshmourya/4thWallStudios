@@ -41,11 +41,36 @@
       </video>
     </div>
     <!-- //only loads before the pae gets loaded -->
+    <header>
+      <nav>
+        <div class="logo">
+          <video muted autoplay loop>
+            <source
+              src="./assets/logo/logo-video.mp4"
+              type="video/mp4"
+              id="logo-video"
+            />
+          </video>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li onclick="scrollToElement('hero')" class="nav-link active">
+              Home
+            </li>
+            <li onclick="scrollToElement('projects')" class="nav-link">
+              Project
+            </li>
+            <li onclick="scrollToElement('reels')" class="nav-link">Reel</li>
+            <li onclick="scrollToElement('team')" class="nav-link">Team</li>
+            <li onclick="scrollToElement('contact')" class="nav-link">
+              Contact Us
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div class="content" id="smooth-scroll ">
-      <div
-        id="scrollToTop"
-        onclick="smoothScroll(document.getElementById('hero'))"
-      >
+      <div id="scrollToTop" onclick="scrollToElement('hero')">
         <svg
           fill="#ffffff"
           viewBox="0 0 24.00 24.00"
@@ -98,32 +123,8 @@
       </div>
       <!-- main section start -->
       <section class="hero" id="hero">
-        <nav>
-          <div class="logo">
-            <img src="./assets/logo/logo.png" alt="logo" />
-          </div>
-          <div class="nav-list">
-            <ul>
-              <li onclick="smoothScroll(document.getElementById('hero'))">
-                Home
-              </li>
-              <li onclick="smoothScroll(document.getElementById('projects'))">
-                Project
-              </li>
-              <li onclick="smoothScroll(document.getElementById('reels'))">
-                Reel
-              </li>
-              <li onclick="smoothScroll(document.getElementById('team'))">
-                Team
-              </li>
-              <li onclick="smoothScroll(document.getElementById('contact'))">
-                Contact Us
-              </li>
-            </ul>
-          </div>
-        </nav>
         <div class="hero-img">
-          <img src="./assets/images/banner-1.jpg" alt="main image" />
+          <img src="./assets/images/banner-1.png" alt="main image" />
         </div>
         <div class="hero-video">
           <video muted autoplay loop>
@@ -166,16 +167,10 @@
           </p>
 
           <div class="my-5">
-            <button
-              class="btn"
-              onclick="smoothScroll(document.getElementById('contact'))"
-            >
+            <button class="btn" onclick="scrollToElement('contact')">
               Contact Us
             </button>
-            <button
-              class="btn"
-              onclick="smoothScroll(document.getElementById('projects'))"
-            >
+            <button class="btn" onclick="scrollToElement('projects')">
               View Work
             </button>
           </div>
@@ -237,7 +232,7 @@
       <!-- =============================================================== -->
       <!-- project starts here -->
       <section
-        class="container projects"
+        class="projects"
         data-aos="fade-up"
         data-aos-anchor-placement="top-center"
         data-aos-easing="ease-out-cubic"
@@ -245,19 +240,21 @@
         id="projects"
       >
         <div class="project-main">
-          <h6>/projects</h6>
-          <h1>
-            Our
-            <div class="words">
-              <span>work</span>
-              <span>projects</span>
-              <span>showcase</span>
-              <span>artistry</span>
-              <span>projects</span>
-            </div>
-          </h1>
+          <div>
+            <h6>/projects</h6>
+            <h1>
+              Our
+              <div class="words">
+                <span>work</span>
+                <span>projects</span>
+                <span>showcase</span>
+                <span>artistry</span>
+                <span>projects</span>
+              </div>
+            </h1>
+          </div>
 
-          <div class="swiper mySwiper">
+          <div class="container swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <img src="./assets/images/work-1.jpg" />
@@ -292,14 +289,6 @@
             </div>
             <div class="swiper-pagination"></div>
           </div>
-
-          <!-- <button class="cta">
-            <span>Hire Us</span>
-            <svg viewBox="0 0 13 10" height="10px" width="15px">
-              <path d="M1,5 L11,5"></path>
-              <polyline points="8 1 12 5 8 9"></polyline>
-            </svg>
-          </button> -->
         </div>
       </section>
 
@@ -409,7 +398,7 @@
       <!-- our team section starts here  -->
       <section
         id="team"
-        class="container"
+        class=""
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-anchor-placement="top-center"
@@ -419,7 +408,7 @@
           <h1>Team</h1>
         </div>
 
-        <div class="swiper team">
+        <div class="container swiper team">
           <div class="swiper-wrapper">
             <div class="swiper-slide team-1">
               <div class="team-detail">
@@ -588,11 +577,15 @@
     <!-- =============================================================== -->
     <!-- contact us section starts -->
 
-    <!--Cursor Part-->
-    <!-- =============================================================== -->
-    <div class="cursor"></div>
-
     <!-- javascript file -->
+    <script
+      src="https://fast.wistia.com/embed/medias/uza5yym3lq.jsonp"
+      async
+    ></script>
+    <script
+      src="https://fast.wistia.com/assets/external/E-v1.js"
+      async
+    ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
@@ -604,6 +597,5 @@
     <script src="./javascript/particelApp.js"></script>
     <script src="./javascript/index.js"></script>
     <script src="./javascript/slider.js"></script>
-    <script src="./javascript/cursor.js"></script>
   </body>
 </html>
