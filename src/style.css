@@ -269,11 +269,25 @@ main::after {
 .logo {
   position: absolute;
   z-index: -1;
+  visibility: hidden;
+  transition: transform 0.7s linear;
 }
 .logo video {
   width: 243px;
 }
 
+@keyframes transform {
+  from {
+    visibility: visible;
+    transform: translateX(10vw);
+    width: 436px;
+  }
+  to {
+    visibility: visible;
+    transform: translateX(0px);
+    width: 234px;
+  }
+}
 .fixed-nav {
   overflow: hidden;
   position: fixed;
@@ -472,7 +486,7 @@ nav li:hover {
     transform: scale(1.1);
   }
 }
-#projects {
+#project {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -588,7 +602,7 @@ nav li:hover {
     transform: translateY(-20px);
   }
 }
-#reels {
+#reel {
   width: 100%;
   height: 100vh;
   margin: auto;
@@ -736,7 +750,6 @@ nav li:hover {
   height: 100vh;
   width: 100%;
   margin: auto;
-  margin-top: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -875,9 +888,12 @@ nav li:hover {
   }
 }
 .contact {
-  height: 30vh;
+  height: 100vh;
   margin: auto;
-  margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .cont-list h1 {

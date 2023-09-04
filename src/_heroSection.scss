@@ -37,12 +37,36 @@
 .logo {
     position: absolute;
     z-index: -1;
+    visibility: hidden;
+
+    transition: transform .7s linear;
+
+
 
     video {
         width: 243px;
     }
 
 }
+
+@keyframes transform {
+    from {
+        visibility: visible;
+        transform: translateX(10vw);
+        width: 436px;
+
+    }
+
+
+    to {
+        visibility: visible;
+        transform: translateX(0px);
+
+        width: 234px;
+
+    }
+}
+
 
 .fixed-nav {
     overflow: hidden;

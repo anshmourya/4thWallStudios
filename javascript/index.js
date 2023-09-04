@@ -1,14 +1,16 @@
 //aos initalization
 AOS.init();
 //typing text animation
-const typing = new Typed(".text", {
-    strings: ["", "Creators", "Freelancer", "Artisans", "Maestros"],
-    typeSpeed: 100,
-    backSpeed: 40,
-    backDelay: 500,
-    loop: true,
+// const typing = new Typed(".text", {
+//     strings: ["", "Creators", "Freelancer", "Artisans", "Maestros"],
+//     typeSpeed: 100,
+//     backSpeed: 40,
+//     backDelay: 500,
+//     loop: true,
 
-});
+// });
+
+
 //handling nav active animations
 const links = document.querySelectorAll('.nav-link');
 
@@ -37,15 +39,18 @@ document.querySelector('video').playbackRate = 0.7;
 
 const nav = document.querySelector("nav");
 const scrollTop = document.getElementById("scrollToTop");
-
+const logo = document.querySelector(".logo");
 window.addEventListener("scroll", () => {
     if (window.scrollY >= 800) {
+        logo.style.visibility = "visible";
+        logo.style.animation = "transform .7s linear";
         nav.classList.add("fixed-nav");
         scrollTop.style.visibility = "visible";
     } else {
         nav.classList.remove("fixed-nav");
-
+        logo.style.visibility = "hidden";
         scrollTop.style.visibility = "hidden";
+        logo.style.animation = null;
     }
 });
 
@@ -92,4 +97,24 @@ window.smoothScroll = function (target) {
 function scrollToElement(id) {
     const elmnt = document.getElementById(id);
     elmnt.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+//handel active nav on scroll
+const navLink = document.querySelectorAll(".nav-list ul li");
+const sections = document.querySelectorAll("section");
+
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY;
+        let offset = sec.offsetTop;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute("id");
+
+        if (top >= offset && top < offset + height) {
+            navLink.forEach(navItem => {
+                navItem.classList.remove("active");
+            });
+            document.querySelector("#" + "nav-" + id).classList.add("active");
+        }
+    })
 }
