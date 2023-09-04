@@ -11,20 +11,8 @@ AOS.init();
 // });
 
 
-//handling nav active animations
-const links = document.querySelectorAll('.nav-link');
 
-if (links.length) {
-    links.forEach((link) => {
-        link.addEventListener('click', (e) => {
-            links.forEach((link) => {
-                link.classList.remove('active');
-            });
-            e.preventDefault();
-            link.classList.add('active');
-        });
-    });
-}
+
 
 // page has to paly for 3 second even if website get loads
 window.addEventListener("load", () => {

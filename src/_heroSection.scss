@@ -1,5 +1,6 @@
 .hero {
     height: 100vh;
+
 }
 
 .hero-img {
@@ -19,10 +20,11 @@
     display: none;
     position: relative;
     z-index: -1;
+    top: -70px;
 
     video {
         width: 30%;
-        margin: -70px auto;
+        margin: auto;
     }
 }
 

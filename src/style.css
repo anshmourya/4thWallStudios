@@ -255,10 +255,11 @@ main::after {
   display: none;
   position: relative;
   z-index: -1;
+  top: -70px;
 }
 .hero-video video {
   width: 30%;
-  margin: -70px auto;
+  margin: auto;
 }
 
 @media screen and (width >= 1024px) {
@@ -383,6 +384,14 @@ nav li:hover {
     letter-spacing: -7px;
   }
 }
+#knowUS {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .play-circle {
   width: 170px;
   position: absolute;

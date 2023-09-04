@@ -1,4 +1,12 @@
 //know us section styles starts
+#knowUS {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 .play-circle {
     width: 170px;
     position: absolute;
@@ -67,7 +75,7 @@
         font-size: 50px;
         font-weight: 500;
         line-height: 100px;
-  
+
     }
 
     h6 {
