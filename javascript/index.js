@@ -41,7 +41,7 @@ const nav = document.querySelector("nav");
 const scrollTop = document.getElementById("scrollToTop");
 const logo = document.querySelector(".logo");
 window.addEventListener("scroll", () => {
-    if (window.scrollY >= 800) {
+    if (window.scrollY >= 900) {
         logo.style.visibility = "visible";
         logo.style.animation = "transform .7s linear";
         nav.classList.add("fixed-nav");
