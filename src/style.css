@@ -384,6 +384,13 @@ nav li:hover {
     letter-spacing: -7px;
   }
 }
+#knowUS {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .play-circle {
   width: 170px;
   position: absolute;
@@ -965,7 +972,6 @@ nav li:hover {
 
 footer {
   position: relative;
-  height: 300px;
   width: 100%;
   z-index: -1;
   visibility: hidden;
@@ -990,14 +996,14 @@ p.copyright {
   position: fixed;
   background-color: #000;
   height: 100vh;
-  width: 100;
+  width: 100%;
   z-index: 100;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 #preLoader video {
-  width: 50%;
+  width: 60%;
 }
 
 @keyframes cursorAnim {
