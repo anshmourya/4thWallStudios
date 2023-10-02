@@ -113,6 +113,12 @@ main::after {
     }
 }
 
+.spacing {
+    margin-top: 2.75rem;
+    padding-bottom: 3.5rem;
+    padding-top: 8rem;
+}
+
 //hero section starts
 @import "./heroSection";
 //hero section ends

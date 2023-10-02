@@ -1,12 +1,9 @@
 // project section styling
 #project {
     width: 100%;
-
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .project-main {
@@ -28,6 +25,14 @@
         line-height: 80px;
     }
 
+    p {
+        color: #676767;
+        padding: 20px 0;
+    }
+}
+
+#project-header {
+    max-width: 1000px;
 }
 
 .words {
@@ -101,6 +106,10 @@
 
 
 @media screen and (width >=786px) {
+    #project {
+        height: 100vh;
+    }
+
     .project-main {
         h1 {
             font-size: 81px;

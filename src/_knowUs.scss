@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 .play-circle {
@@ -83,6 +82,12 @@
         line-height: 34px;
         color: #676767;
         padding-bottom: 20px;
+    }
+}
+
+@media screen and (width >=768px) {
+    #knowUS {
+        height: 100vh;
     }
 }
 

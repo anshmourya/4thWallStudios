@@ -67,3 +67,18 @@ var swiper = new Swiper(".team", {
     }
 
 });
+
+var swiper = new Swiper(".heross", {
+    slidesPerView: 1,
+    centeredSlides: true,
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 30,
+    keyboard: {
+        enabled: true
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
