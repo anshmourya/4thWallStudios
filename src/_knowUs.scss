@@ -71,9 +71,10 @@
 
     h3 {
         font-size: 50px;
-        font-weight: 500;
         line-height: 100px;
-
+        color: transparent;
+        -webkit-text-stroke: 1px #fff;
+        font-weight: 800;
     }
 
     h6 {

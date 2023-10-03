@@ -83,6 +83,13 @@
               reel
             </li>
             <li
+              onclick="scrollToElement('services')"
+              class="nav-link"
+              id="nav-services"
+            >
+              services
+            </li>
+            <li
               onclick="scrollToElement('team')"
               class="nav-link"
               id="nav-team"
@@ -238,7 +245,7 @@
       <!-- know us setction starts -->
       <section class="px-5 pb-4" id="knowUS">
         <div class="container gap-32 m-auto xl:flex">
-          <div class="relative m-auto picture">
+          <!-- <div class="relative m-auto picture">
             <img
               src="/assets/images/dummy-about-img-1.jpg"
               alt="about"
@@ -262,7 +269,7 @@
                 </a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="about-text">
             <span>/who are we</span>
             <h3>4thwallstudio</h3>
@@ -286,6 +293,21 @@
               Over the years, our relentless pursuit of excellence and
               unwavering commitment to innovation have propelled us to the
               forefront of the industry.
+            </h6>
+            <h6>
+              Our <b>studio</b> is home to a diverse and passionate team of
+              artists, each bringing their unique skills and expertise to the
+              canvas. From concept designers and animators to compositors and
+              technical wizards, we thrive on collaboration and harness the
+              collective power of creativity to deliver unparalleled visual
+              experiences
+            </h6>
+            <h6>
+              Curious to explore the depths of visual enchantment? We're just a
+              click away! Reach out to us to discuss your project, learn more
+              about our services, or simply share your ideas. Together, let's
+              transcend the boundaries of possibility and craft visual wonders
+              that will resonate with audiences for generations to come.
             </h6>
           </div>
         </div>
@@ -322,7 +344,7 @@
           <div class="swiper mySwiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img src="./assets/images/work-1.jpg" />
+                <img src="./assets/images/work-9.jpg" />
               </div>
               <div class="swiper-slide">
                 <img src="./assets/images/work-2.jpg" />
@@ -351,14 +373,9 @@
               <div class="swiper-slide">
                 <img src="./assets/images/work-10.jpg" />
               </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/work-9.jpg" />
-              </div>
+
               <div class="swiper-slide">
                 <img src="./assets/images/work-3.jpg" />
-              </div>
-              <div class="swiper-slide">
-                <img src="./assets/images/work-9.jpg" />
               </div>
               <div class="swiper-slide">
                 <img src="./assets/images/work-6.jpg" />
@@ -392,14 +409,7 @@
       </section>
       <!-- reel section ends here -->
       <!-- provides services starts -->
-      <!-- <section
-        class="container relative"
-        id="services"
-        data-aos="fade-up"
-        data-aos-easing="linear"
-        data-aos-anchor-placement="top-center"
-        data-aos-duration="1500"
-      >
+      <section class="container relative" id="services">
         <div id="service-header">
           <h6>/services</h6>
           <h3>Our <span>production.</span></h3>
@@ -410,7 +420,7 @@
           </h5>
         </div>
         <div class="services">
-       --------service one--------
+          <!-- --------service one-------- -->
           <div class="service-one service-item">
             <div class="service-icon">
               <img src="/assets/images/service-visual-effect.png" alt="" />
@@ -423,7 +433,7 @@
               </p>
             </div>
           </div>
-          ------------service two-------------- 
+          <!-- ------------service two-------------- -->
           <div class="service-two service-item">
             <div class="service-icon">
               <img src="/assets/images/service-visual-effect.png" alt="" />
@@ -436,7 +446,7 @@
               </p>
             </div>
           </div>
-         ------------service three-------------- 
+          <!-- ------------service three-------------- -->
           <div class="service-three service-item">
             <div class="service-icon">
               <img src="/assets/images/service-visual-effect.png" alt="" />
@@ -450,9 +460,9 @@
             </div>
           </div>
 
-          ------------service ends-------------- 
+          <!-- ------------service ends-------------- -->
         </div>
-        ART WORK 
+        <!-- ART WORK -->
         <img
           src="/assets/images/art-work.png"
           alt="art work"
@@ -469,7 +479,7 @@
           data-aos-easing="ease-out-cubic"
           data-aos-duration="2000"
         />
-      </section> -->
+      </section>
       <!-- provides services  ends-->
 
       <!-- our team section starts here  -->
@@ -487,10 +497,10 @@
 
         <div class="container swiper team">
           <div class="swiper-wrapper">
-            <div class="swiper-slide team-1">
+            <div class="swiper-slide team-2">
               <div class="team-detail">
-                <p>Company CEO</p>
-                <h3>Rupak Shaw</h3>
+                <p>Company Founder</p>
+                <h3>Bhola Shankar Shaw</h3>
                 <div class="social-icons">
                   <a href="#">fb.</a>
                   <a href="#">in.</a>
@@ -498,10 +508,10 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide team-1">
+            <div class="swiper-slide team-3">
               <div class="team-detail">
-                <p>Company CEO</p>
-                <h3>Rupak Shaw</h3>
+                <p>HR Manager</p>
+                <h3>Megha Shaw</h3>
                 <div class="social-icons">
                   <a href="#">fb.</a>
                   <a href="#">in.</a>
@@ -509,10 +519,10 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide team-1">
+            <div class="swiper-slide team-4">
               <div class="team-detail">
-                <p>Company CEO</p>
-                <h3>Rupak Shaw</h3>
+                <p>Creative Producer</p>
+                <h3>Sumit Shah</h3>
                 <div class="social-icons">
                   <a href="#">fb.</a>
                   <a href="#">in.</a>
@@ -520,21 +530,10 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-slide team-1">
+            <div class="swiper-slide team-5">
               <div class="team-detail">
-                <p>Company CEO</p>
-                <h3>Rupak Shaw</h3>
-                <div class="social-icons">
-                  <a href="#">fb.</a>
-                  <a href="#">in.</a>
-                  <a href="#">tw.</a>
-                </div>
-              </div>
-            </div>
-            <div class="swiper-slide team-1">
-              <div class="team-detail">
-                <p>Company CEO</p>
-                <h3>Rupak Shaw</h3>
+                <p>Unknown</p>
+                <h3>unknown</h3>
                 <div class="social-icons">
                   <a href="#">fb.</a>
                   <a href="#">in.</a>
