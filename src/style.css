@@ -644,7 +644,6 @@ nav li:hover {
 }
 #reel {
   width: 100%;
-  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -672,7 +671,6 @@ nav li:hover {
   display: grid;
   place-items: center;
   margin: auto;
-  height: 100vh;
   padding: 20px;
 }
 
@@ -702,12 +700,11 @@ nav li:hover {
 }
 
 .services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  flex-direction: column;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
+  text-align: center;
 }
 .services img {
   margin: auto;
@@ -737,13 +734,13 @@ nav li:hover {
   border: 0 solid;
   outline-offset: 0px;
   text-shadow: none;
-  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 150ms cubic-bezier(0.19, 1, 0.22, 1);
   border-radius: 10px;
 }
 
-.service-two {
+.service-item:hover {
   background: #090909;
-  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .art-work-1,
@@ -762,6 +759,11 @@ nav li:hover {
   left: 0;
 }
 
+@media screen and (width >= 768px) {
+  .services {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
 @media screen and (width >= 1024px) {
   #service-header h3 {
     font-size: 70px;
