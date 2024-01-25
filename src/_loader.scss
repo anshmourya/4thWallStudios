@@ -13,3 +13,9 @@
         max-width: 800px;
     }
 }
+
+@media screen and (width >=500px) {
+    #preLoader {
+        display: none;
+    }
+}

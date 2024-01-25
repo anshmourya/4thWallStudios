@@ -1055,6 +1055,11 @@ p.copyright {
   max-width: 800px;
 }
 
+@media screen and (width >= 500px) {
+  #preLoader {
+    display: none;
+  }
+}
 @keyframes cursorAnim {
   from {
     transform: scale(1);
