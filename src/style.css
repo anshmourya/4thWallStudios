@@ -154,7 +154,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  height: 100vh;
   background: #000;
   color: #fff;
   overscroll-behavior: none;
@@ -456,7 +455,7 @@ nav li:hover {
   font-size: 16px;
 }
 .about-text h3 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 100px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
@@ -470,11 +469,6 @@ nav li:hover {
   padding-bottom: 20px;
 }
 
-@media screen and (width >= 768px) {
-  #knowUS {
-    height: 100vh;
-  }
-}
 @media screen and (width >= 1300px) {
   .play-circle {
     width: 200px;
@@ -515,6 +509,8 @@ nav li:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 .project-main {
@@ -587,9 +583,6 @@ nav li:hover {
 }
 
 @media screen and (width >= 786px) {
-  #project {
-    height: 100vh;
-  }
   .project-main h1 {
     font-size: 81px;
   }
@@ -649,6 +642,8 @@ nav li:hover {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
 }
 
 .reel-title {
@@ -656,7 +651,7 @@ nav li:hover {
 }
 .reel-title h1 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 54px;
+  font-size: 40px;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
   font-weight: 900;
@@ -702,7 +697,7 @@ nav li:hover {
 .services {
   margin: 20px auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 20px;
   text-align: center;
 }
@@ -789,13 +784,14 @@ nav li:hover {
   }
 }
 #team {
-  height: 100vh;
   width: 100%;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
 }
 
 .team-title {
@@ -954,7 +950,6 @@ nav li:hover {
   }
 }
 .contact {
-  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -964,7 +959,7 @@ nav li:hover {
 
 .cont-list h1 {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 80px;
+  font-size: 70px;
   color: transparent;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
   font-weight: 900;
@@ -1056,7 +1051,8 @@ p.copyright {
   align-items: center;
 }
 #preLoader video {
-  width: 80%;
+  width: 100%;
+  max-width: 800px;
 }
 
 @keyframes cursorAnim {
